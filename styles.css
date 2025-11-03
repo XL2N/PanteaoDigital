@@ -1,0 +1,200 @@
+/* --------------------------------------------------- */
+/* 1. VARIÁVEIS DE COR E GLOBAIS
+/* --------------------------------------------------- */
+
+/* * :root é onde definimos nossas variáveis de cor.
+ * Isso facilita mudar a paleta inteira só mexendo aqui.
+ * Escolhi tons que combinam com sua paleta.
+*/
+:root {
+    --cor-lilás: #C8B6FF;          /* Lilás para botões e fundos de destaque */
+    --cor-amarelo-pastel: #FFFDEB; /* Amarelo bem claro para fundos de seção */
+    --cor-texto-escuro: #4A4458;   /* Um roxo/cinza escuro para texto, fica melhor que preto */
+    --cor-fundo: #FFFFFF;          /* Branco */
+    --cor-branco: #FFFFFF;
+}
+
+/* Reset básico e fonte principal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Você pode adicionar a fonte "Poppins" depois, por enquanto usamos sans-serif */
+    font-family: 'Poppins', sans-serif; 
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-escuro);
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------- */
+/* 2. LAYOUT PRINCIPAL (HEADER, NAV, MAIN, FOOTER)
+/* --------------------------------------------------- */
+
+header {
+    background-color: var(--cor-texto-escuro); /* Cabeçalho escuro dá contraste */
+    color: var(--cor-branco);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    display: flex; /* Coloca os links lado a lado */
+    justify-content: center; /* Centraliza o menu */
+    gap: 2rem; /* Espaço entre os links */
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: var(--cor-branco);
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 5px; /* Espaço para o sublinhado do .active */
+}
+
+/* Destaque para o link da página atual */
+nav a.active {
+    color: var(--cor-lilás); /* Cor lilás na página ativa */
+    border-bottom: 3px solid var(--cor-lilás);
+}
+
+/* Efeito suave ao passar o mouse */
+nav a:hover {
+    color: var(--cor-lilás);
+}
+
+/* Container principal (centraliza o conteúdo) */
+main {
+    max-width: 900px; /* Largura máxima do conteúdo */
+    margin: 2rem auto; /* Centraliza na tela (cima/baixo, auto laterais) */
+    padding: 0 1rem; /* Espaçamento para telas pequenas */
+}
+
+/* Estilo padrão para todas as seções */
+section {
+    background-color: var(--cor-amarelo-pastel); /* Fundo amarelo pastel */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+h2 {
+    color: var(--cor-texto-escuro);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%; /* Imagens nunca passarão do tamanho do container */
+    border-radius: 8px; /* Bordas arredondadas para imagens */
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--cor-texto-escuro);
+    color: var(--cor-branco);
+    margin-top: 3rem;
+}
+
+/* --------------------------------------------------- */
+/* 3. ESTILOS DA PÁGINA INDEX.HTML (GERADOR)
+/* --------------------------------------------------- */
+
+/* Seção do gerador com fundo lilás */
+section.gerador {
+    background-color: var(--cor-lilás);
+    text-align: center;
+}
+
+.gerador blockquote {
+    font-size: 1.75rem; /* Fonte maior para a citação */
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--cor-texto-escuro);
+}
+
+.gerador #autor-citacao {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* O botão principal! */
+#btn-gerar {
+    background-color: var(--cor-texto-escuro);
+    color: var(--cor-branco);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem; /* Botão "gordinho" */
+    border: none;
+    border-radius: 50px; /* Botão com bordas totalmente redondas */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse no botão */
+#btn-gerar:hover {
+    background-color: #6D6680; /* Um tom mais claro do roxo escuro */
+    transform: scale(1.05); /* Leve aumento */
+}
+
+/* Seção de Destaque */
+.destaque {
+    text-align: center;
+}
+.destaque p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* --------------------------------------------------- */
+/* 4. ESTILOS DA PÁGINA TEMAS.HTML (GALERIA)
+/* --------------------------------------------------- */
+
+.pagina-temas p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* A galeria (usando Flexbox) */
+.galeria-temas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha em telas menores */
+    justify-content: center; /* Centraliza os cards */
+    gap: 1.5rem; /* Espaço entre os cards */
+}
+
+.card-tema {
+    background-color: var(--cor-fundo); /* Fundo branco para os cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Garante que a imagem não vaze das bordas redondas */
+    flex-basis: 250px; /* Cada card começa com 250px */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-tema:hover {
+    transform: translateY(-5px); /* Efeito de "levantar" */
+}
+
+.card-tema img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+    border-radius: 8px 8px 0 0; /* Borda só em cima */
+}
+
+.card-tema h3 {
+    padding: 1rem;
+}
