@@ -1,5 +1,5 @@
-
 /* --- CONTEUDO GERAL DO SITE --- */
+
 :root {
     --roxo-principal: #4527A0; /* Roxo escuro*/
     --dourado: #d3b243;        /* Dourado  */
@@ -94,4 +94,11 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
+}
+
+a {
+    margin-top: 2rem;   
+    text-decoration: none;
+    color: var(--dourado);
+    font-weight: 700;
 }

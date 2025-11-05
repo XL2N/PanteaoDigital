@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +15,20 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="../css/mitos.css">
     <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/mitos.css">
 
     <!-- SCRIPT -->
-    <script src="../script.js" defer></script> 
+    <script src="../js/mitos.js" defer></script>
 </head>
 
 <body>
+    <!-- CABEÇALHO E BARRA DE NAVEGAÇÃO -->
     <header>
         <h1>O Panteão Digital 🏛️</h1>
         <nav>
             <ul>
-                <li><a href="index.html" >Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="herois.html">Heróis</a></li>
                 <li><a href="mitos.html" class="active">Mitos</a></li>
             </ul>
@@ -34,89 +36,41 @@
     </header>
 
     <main>
-        <section class="pagina-temas">
-            <h2> Mitos mais famosos</h2>
-            <div class="cards-mitos">
-                <div class="card-mito">
-                    <img src="../images/mitos/pandora.png" alt="Pandora">
-                    <h3>A caixa de Pandora</h3>
-                    <p>
-                        A história sobre como todos os males do mundo foram libertados quando Pandora abriu a caixa, e a esperança permaneceu no fundo.
-                    </p>
-                    </div>
+        <h2> Grandes Mitos </h2>
 
-                <div class="card-mito">
-                    <img src="../images/mitos/minotauro.png" alt="Minotauro">
-                    <h3>A jornada de Odisseu</h3>
-                    <p>
-                        A longa e árdua jornada de volta para casa do herói Odisseu após a Guerra de Troia. 
-                    </p>
+        <div class="mitos-container">
+            <!-- BARRA LATERAL DE MITOS -->
+            <section class="lista-mitos">
+                <ul>
+                    <li><button class="btn-mito" data-mito="pandora">A Caixa de Pandora</button></li>
+                    <li><button class="btn-mito" data-mito="odisseu">A jornada de Odisseu</button></li>
+                    <li><button class="btn-mito" data-mito="perseu">Perseu e Medusa</button></li>
+                    <li><button class="btn-mito" data-mito="hercules">As doze tarefas de Hércules</button></li>
+                    <li><button class="btn-mito" data-mito="teseu">Teseu e o Minotauro</button></li>
+                    <li><button class="btn-mito" data-mito="sisifo">Sísifo</button></li>
+                    <li><button class="btn-mito" data-mito="persefone">O rapto de Perséfone</button></li>
+                    <li><button class="btn-mito" data-mito="eros">Eros e Psiquê</button></li>
+                    <li><button class="btn-mito" data-mito="icaro">Dédalo e Ícaro</button></li>
+                    <li><button class="btn-mito" data-mito="midas">Rei Midas</button></li>
+                </ul>
+            </section>
+
+            <section class="conteudo-mito">
+                <div id="mito-display-inicial">
+                    <img src="../images/mitos/oraculo.png" alt="Oráculo de Delfos" class="mito-imagem-inicial">
+                    <h3>Selecione um mito ao lado</h3>
+                    <p>Clique em um dos títulos para carregar a história e a imagem correspondente.</p>
                 </div>
 
-                <div class="card-mito">
-                    <img src="../images/mitos/medusaEperseu.png" alt="Perseu e Medusa">
-                    <h3>Perseu e Medusa</h3>
-                    <p>
-                        A história do herói que enfrentou a górgona de cabelos de serpente para resgatar a princesa Andrômeda.                     </p>
+                <div id="mito-display-conteudo" style="display: none;">
+                    <h3 id="mito-titulo"></h3>
+                    <img id="mito-imagem" src="" alt="Imagem do Mito">
+                    <p id="mito-texto"></p>
+                    <a id="mito-referencia" href="#" target="_blank" class="referencia-link"></a>
                 </div>
+            </section>
+        </div>
 
-                <div class="card-mito">
-                    <img src="../images/mitos/hercules.png" alt="Hércules">
-                    <h3>As doze tarefas de Hércules</h3>
-                    <p>
-                        As tarefas impossíveis que o herói Héracles teve que cumprir como penitência. 
-                    </p>
-                </div>
-
-                <div class="card-mito">
-                    <img src="../images/mitos/teseu.png" alt="Teseu">
-                    <h3>Teseu e o Minotauro</h3>
-                    <p>
-                        A aventura do herói Teseu ao matar o Minotauro no labirinto de Creta. 
-                    </p>
-                </div>
-
-                <div class="card-mito">
-                    <img src="../images/mitos/sisifo.png" alt="Sísifo">
-                    <h3>Sísifo</h3>
-                    <p>
-                        O mito sobre o trabalho árduo e o sofrimento eterno, com Sísifo condenado a empurrar uma pedra montanha acima para sempre. 
-                    </p>
-                </div>
-
-                <div class="card-mito">
-                    <img src="../images/mitos/persefone.png" alt="Perséfone">
-                    <h3>O rapto de Perséfone</h3>
-                    <p>
-                        A história que explica as estações do ano, com Perséfone sendo levada ao submundo por Hades e retornando à Terra, para a alegria de sua mãe, Deméter, a deusa da agricultura. 
-                    </p>
-                </div>
-
-                <div class="card-mito">
-                    <img src="../images/mitos/erosEpsique.png" alt="Eros e Psiquê">
-                    <h3>Eros e Psiquê</h3>
-                    <p>
-                        A história de amor entre o deus do amor Eros e a mortal Psiquê, que enfrentou desafios para provar seu amor verdadeiro.
-                    </p>
-                </div>
-
-                <div class="card-mito">
-                    <img src="../images/mitos/dedaloEicaro.png" alt="Dédalo e Ícaro">
-                    <h3>Dédalo e Ícaro</h3>
-                    <p>
-                        A história do inventor Dédalo e seu filho Ícaro, que voou muito perto do sol com asas de cera, resultando em sua queda fatal no mar. 
-                    </p>
-                </div>
-
-                <div class="card-mito">
-                    <img src="../images/mitos/icarus.png" alt="Ícaro">
-                    <h3>Rei Midas</h3>
-                    <p>
-                        A história do rei que desejou que tudo que tocasse virasse ouro, e aprendeu o valor das coisas simples da vida depois de perceber que não poderia mais comer, abraçar sua filha, e nem sequer tocar em vinho. 
-                    </p>
-                </div>
-            </div>
-        </section>            
     </main>
 
     <footer>
@@ -124,4 +78,5 @@
     </footer>
 
 </body>
+
 </html>

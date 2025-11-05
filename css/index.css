@@ -144,10 +144,3 @@
     font-size: 1.05rem;
     margin-bottom: 1rem
 }
-
-.destaque-texto a {
-    margin-top: 2rem;   
-    text-decoration: none;
-    color: var(--dourado);
-    font-weight: 700;
-}
