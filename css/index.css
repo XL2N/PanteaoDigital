@@ -1,0 +1,129 @@
+/* --- SEÇÃO 1 ---*/
+
+.hero {
+    position: relative; 
+    text-align: center;
+    color: var(--branco);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.hero-image img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    filter: brightness(0.6); 
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: var(--branco);
+    margin: 0;
+}
+.hero-text h2 {
+    font-size: 1.5rem;
+    color: var(--dourado);
+    margin: 0;
+}
+
+/* --- SEÇÃO 2 ---*/
+
+.cards-mulheres {
+    padding-top: 2rem;
+}
+
+.cards-mulheres h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cards-mulheres {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--branco-marmore);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-basis: 320px; 
+    text-align: center;
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.card p {
+    padding: 0 1rem 1.5rem 1rem;
+    font-size: 0.95rem;
+}
+
+/* --- SEÇÃO 3 ---*/
+
+.destaque {
+    padding: 2.5rem;
+    background: var(--branco-marmore);
+    border-radius: 8px;
+}
+
+.destaque h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.destaque-container {
+    display: flex; 
+    align-items: center; 
+    gap: 2rem; 
+    flex-wrap: wrap; 
+}
+
+.destaque-imagem {
+    flex: 1;
+    min-width: 250px;
+}
+
+.destaque-imagem img {
+    border-radius: 8px;
+    border: 3px solid var(--dourado);
+}
+
+.destaque-texto {
+    flex: 2; 
+    min-width: 300px;
+}
+
+.destaque-texto h3 {
+    font-size: 1.5rem;
+}
+
+.destaque-texto p {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+}
