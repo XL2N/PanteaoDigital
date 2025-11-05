@@ -1,0 +1,92 @@
+
+/* --- CONTEUDO PRINCIPAL*/
+:root {
+    --roxo-principal: #4527A0; /* Roxo escuro*/
+    --dourado: #D4AF37;        /* Dourado  */
+    --branco-marmore: #F5F5F5; /* Branco acinzentado */
+    --texto-escuro: #333333;   /* Cinza Escuro */
+    --branco: #FFFFFF;         /* Branco puro */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--branco-marmore);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--roxo-principal);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* --- HEADER E NAVEGAÇÃO --- */
+
+header {
+    background-color: var(--roxo-principal);
+    color: var(--branco);
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 5px solid var(--dourado);
+}
+
+header h1 {
+    color: var(--branco);
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: var(--dourado);
+}
+
+nav a.active {
+    color: var(--dourado);
+    border-bottom: 3px solid var(--dourado);
+}
+
+/* --- RODAPÉ --- */
+
+footer {
+    background-color: var(--roxo-principal); /* (NOVO) */
+    color: var(--branco-marmore);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
