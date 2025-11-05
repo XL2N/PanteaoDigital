@@ -119,10 +119,42 @@
     right: 0px; 
 }
 
-/* --- SEÇÃO 1 ---*/
+/*--- TAGS DE DEUSES/HEROIS ---*/
 
-/* --- SEÇÃO 2 ---*/
+/* --------------------------------------------------- */
+/* 8. ESTILO DAS TAGS (Deus, Semideus, Criatura)
+/* --------------------------------------------------- */
+.card-tag {
+    position: absolute; 
+    top: 10px; 
+    left: 10px;
+    padding: 4px 10px; 
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--branco);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+}
 
-/* --- SEÇÃO 3 ---*/
+/* Cores das Tags */
+.tag-deus {
+    background-color: var(--dourado);  /* Dourado */
+}
 
-/* --- SEÇÃO 4 ---*/
+.tag-semideus {
+    background-color: #25a9da; /* Azul */
+}
+
+.tag-heroi {
+    background-color: #B91C1C; /* vermelho */
+}
+
+.tag-criatura {
+    background-color: #1fb91c; /* Verde  */
+}
+
+.tag-feiticeira {
+    background-color: var(--roxo-principal); /* Azul*/
+}
