@@ -1,8 +1,8 @@
 
-/* --- CONTEUDO PRINCIPAL*/
+/* --- CONTEUDO GERAL DO SITE --- */
 :root {
     --roxo-principal: #4527A0; /* Roxo escuro*/
-    --dourado: #D4AF37;        /* Dourado  */
+    --dourado: #c7a430;        /* Dourado  */
     --branco-marmore: #F5F5F5; /* Branco acinzentado */
     --texto-escuro: #333333;   /* Cinza Escuro */
     --branco: #FFFFFF;         /* Branco puro */
@@ -14,15 +14,20 @@
 }
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     background-color: var(--branco-marmore);
     color: var(--texto-escuro);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3 {
-    font-weight: 700;
+    font-family: 'MedievalSharp', sans-serif;
+    font-weight: 400;
     color: var(--roxo-principal);
+    font-size: 2.5rem;
 }
 
 img {
@@ -53,7 +58,7 @@ header {
 
 header h1 {
     color: var(--branco);
-    font-size: 2.2rem;
+    font-size: 4.5rem;
 }
 
 nav ul {
