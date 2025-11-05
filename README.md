@@ -1,2 +1,2 @@
-# Inspira-Bot
-Gerador de Citações Inspiradoras
+# Panteão Digital
+Projeto de exposição de mitos gregos
