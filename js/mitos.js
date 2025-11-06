@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Procura os elementos da página de Mitos
     const listaMitos = document.querySelector('.lista-mitos');
     if (!listaMitos) {
-        return; 
+        return;
     }
 
     // Após encontrar pega os elementos
     const botoesMito = document.querySelectorAll('.btn-mito');
     const displayInicial = document.getElementById('mito-display-inicial');
     const displayConteudo = document.getElementById('mito-display-conteudo');
-    
+
     // Elementos que vamos preencher
     const tituloMito = document.getElementById('mito-titulo');
     const imagemMito = document.getElementById('mito-imagem');
@@ -24,70 +24,70 @@ document.addEventListener('DOMContentLoaded', () => {
         "pandora": {
             titulo: "A Caixa de Pandora",
             imagem: "../images/mitos/pandora.png",
-            texto: "A história sobre como todos os males do mundo foram libertados quando Pandora abriu a caixa, e a esperança permaneceu no fundo.",
+            texto: "Pandora foi criada pelos deuses a mando de Zeus como a primeira mulher da humanidade. Moldada por Hefesto e dotada de dons de várias divindades, ela recebeu uma caixa (ou jarro) que jamais deveria ser aberta. Movida pela curiosidade, Pandora abriu o recipiente e libertou todos os males do mundo — doenças, sofrimento, inveja, velhice e desgraças. Apenas a esperança permaneceu no fundo, simbolizando que, mesmo diante do caos, o ser humano ainda guarda algo que o motiva a seguir. O mito representa a origem dos males e a dualidade entre curiosidade e esperança, sendo uma metáfora da própria condição humana.",
             link: "https://brasilescola.uol.com.br/mitologia/a-caixa-pandora.htm",
             fonte: "Fonte: Brasil Escola"
         },
         "odisseu": {
             titulo: "A jornada de Odisseu",
             imagem: "../images/herois/odisseu.png",
-            texto: "A longa e árdua jornada de volta para casa do herói Odisseu após a Guerra de Troia, enfrentando ciclopes, sereias e a fúria dos deuses.",
+            texto: "Odisseu, conhecido pelos romanos como Ulisses, é o herói grego protagonista da Odisseia, epopeia de Homero. Após a Guerra de Troia, ele enfrenta uma longa e perigosa jornada de dez anos para retornar à sua terra natal, Ítaca. Durante o caminho, Odisseu enfrenta criaturas míticas como o ciclope Polifemo, as sereias, o gigante Lestrigão e a feiticeira Circe, além de sofrer a ira de Poseidon, que o impede de chegar em casa. Astuto e engenhoso, ele se destaca mais pela inteligência do que pela força, simbolizando o triunfo da razão humana sobre os desafios e tentações. A narrativa aborda temas como o retorno ao lar (nóstos), a fidelidade, a coragem e a perseverança diante do destino.",
             link: "https://brasilescola.uol.com.br/mitologia/a-odisseia.htm",
             fonte: "Fonte: Brasil Escola"
         },
         "perseu": {
             titulo: "Perseu e Medusa",
             imagem: "../images/mitos/medusaEperseu.png",
-            texto: "A história do herói que enfrentou a górgona de cabelos de serpente para resgatar a princesa Andrômeda.",
+            texto: "Perseu é um dos heróis mais célebres da mitologia grega. Filho de Zeus e da mortal Danae, ele foi encarregado de realizar uma tarefa quase impossível: derrotar Medusa, a górgona cujo olhar transformava qualquer um em pedra. Com a ajuda dos deuses — Hermes lhe deu sandálias aladas e Atena um escudo espelhado — Perseu conseguiu decapitá-la sem olhar diretamente para ela. Do sangue de Medusa nasceu o cavalo alado Pégaso. Mais tarde, Perseu salvou Andrômeda, que seria sacrificada a um monstro marinho, e a tomou por esposa. O mito representa a coragem, a superação do medo e a vitória da inteligência divina sobre o terror.",
             link: "https://seresmitologicos.com.br/perseu/",
             fonte: "Fonte: Seres Mitológicos"
         },
         "hercules": {
             titulo: "As doze tarefas de Hércules",
             imagem: "../images/mitos/hercules.png",
-            texto: "As tarefas impossíveis que o herói Héracles (Hércules) teve que cumprir como penitência por seus crimes.",
+            texto: "Héracles, conhecido em Roma como Hércules, é o herói símbolo da força e da resistência. Filho de Zeus e da mortal Alcmena, foi vítima da fúria de Hera, que o fez cometer um terrível crime contra sua própria família. Para se redimir, o oráculo de Delfos impôs-lhe doze tarefas impossíveis, determinadas pelo rei Euristeu. Entre elas estavam matar o Leão de Nemeia, capturar o javali de Erimanto, limpar os estábulos de Áugias e capturar Cérbero, o cão guardião do submundo. Cada tarefa simbolizava o domínio sobre instintos, perigos e desafios humanos. Após cumpri-las, Hércules ascendeu ao Olimpo, tornando-se um deus, exemplo de força e redenção.",
             link: "https://brasilescola.uol.com.br/mitologia/hercules.htm",
             fonte: "Fonte: Brasil Escola"
         },
         "teseu": {
             titulo: "Teseu e o Minotauro",
             imagem: "../images/mitos/teseuEminotauro.png",
-            texto: "A aventura do herói Teseu ao se voluntariar para entrar no labirinto de Creta e matar o monstruoso Minotauro.",
+            texto: "Teseu era filho de Egeu, rei de Atenas, e ficou conhecido por enfrentar o temido Minotauro, criatura metade homem e metade touro. A cada nove anos, sete jovens e sete donzelas eram enviados como sacrifício ao monstro, que vivia no labirinto construído por Dédalo em Creta. Teseu se ofereceu para ir e, com a ajuda de Ariadne, filha do rei Minos, recebeu um novelo de fio para não se perder no caminho. Ele matou o Minotauro e conseguiu escapar, tornando-se símbolo de coragem, inteligência e heroísmo civilizador. O mito representa a vitória da razão sobre a brutalidade e a busca humana por liberdade e justiça.",
             link: "https://seresmitologicos.com.br/minotauro/",
             fonte: "Fonte: Seres Mitológicos"
         },
         "sisifo": {
             titulo: "Sísifo",
             imagem: "../images/mitos/sisifo.png",
-            texto: "O mito sobre o trabalho árduo e o sofrimento eterno, com Sísifo condenado pelos deuses a empurrar uma pedra montanha acima para sempre.",
+            texto: "Sísifo foi um rei astuto e enganador, que tentou trapacear os deuses várias vezes. Por sua arrogância e desafio à ordem divina, foi condenado por Zeus a um castigo eterno: empurrar uma enorme pedra montanha acima, apenas para vê-la rolar de volta toda vez que chegava ao topo. O mito de Sísifo é uma poderosa metáfora sobre o esforço inútil e o ciclo interminável do trabalho humano. Na filosofia moderna, especialmente em Albert Camus, Sísifo simboliza a condição humana — o absurdo da existência e a necessidade de encontrar sentido mesmo em meio ao sofrimento inevitável.",
             link: "https://brasilescola.uol.com.br/mitologia/mito-de-sisifo.htm",
             fonte: "Fonte: Brasil Escola"
         },
         "persefone": {
             titulo: "O rapto de Perséfone",
             imagem: "../images/mitos/persefone.png",
-            texto: "A história que explica as estações do ano, com Perséfone sendo levada ao submundo por Hades e retornando à Terra para sua mãe, Deméter.",
+            texto: "Perséfone era filha de Deméter, deusa da colheita e fertilidade. Um dia, enquanto colhia flores, foi raptada por Hades, deus do submundo, que a levou para seu reino e a tornou sua esposa. Inconsolável, Deméter fez com que a Terra se tornasse infértil, mergulhando o mundo em fome. Zeus interveio, e ficou decidido que Perséfone passaria parte do ano com Hades (outono e inverno) e parte com sua mãe (primavera e verão). O mito simboliza o ciclo das estações e a alternância entre morte e renascimento na natureza. Também representa o vínculo entre mãe e filha e o equilíbrio entre luz e escuridão.",
             link: "https://brasilescola.uol.com.br/mitologia/persefone.htm",
             fonte: "Fonte: Brasil Escola"
         },
         "eros": {
             titulo: "Eros e Psiquê",
             imagem: "../images/mitos/erosEpsique.png",
-            texto: "A história de amor entre o deus do amor Eros (Cupido) e a mortal Psiquê, que enfrentou desafios para provar seu amor verdadeiro.",
+            texto: "Eros, deus do amor, apaixonou-se pela mortal Psiquê, cuja beleza despertou ciúmes em Afrodite. A deusa impôs à jovem várias provas impossíveis, que Psiquê superou com coragem e auxílio divino. Um dos desafios foi descer ao mundo dos mortos e trazer uma caixa com a beleza de Perséfone, mas Psiquê, movida pela curiosidade, abriu-a e caiu em sono profundo. Eros a salvou e pediu a Zeus que a tornasse imortal, para que pudessem se unir para sempre. O mito representa a jornada do amor verdadeiro, que vence obstáculos e revela a união entre alma (Psiquê) e desejo (Eros).",
             link: "https://seresmitologicos.com.br/psique/",
             fonte: "Fonte: Seres Mitológicos"
         },
         "icaro": {
             titulo: "Dédalo e Ícaro",
             imagem: "../images/mitos/dedaloEicaro.png",
-            texto: "A história do inventor Dédalo e seu filho Ícaro, que voou muito perto do sol com asas de cera, resultando em sua queda fatal no mar.",
+            texto: "Dédalo, grande inventor ateniense, foi aprisionado em Creta junto com seu filho Ícaro pelo rei Minos. Para escapar, ele construiu asas feitas de penas e cera. Antes de voarem, Dédalo advertiu Ícaro para não se aproximar demais do sol, pois o calor derreteria a cera. Fascinado pela sensação de liberdade, o jovem desobedeceu e subiu alto demais; as asas se desmancharam e ele caiu no mar. O mito de Ícaro é um lembrete sobre os perigos da arrogância e do excesso de ambição, mas também sobre o impulso humano de buscar o impossível, mesmo com o risco da queda.",
             link: "https://brasilescola.uol.com.br/mitologia/dedalo-icaro.htm",
             fonte: "Fonte: Brasil Escola"
         },
         "midas": {
             titulo: "Rei Midas",
             imagem: "../images/mitos/reimidas.png",
-            texto: "A história do rei que desejou que tudo que tocasse virasse ouro, e aprendeu o valor das coisas simples da vida.",
+            texto: "O rei Midas era conhecido por sua riqueza e ganância. Um dia, ajudou o deus Dionísio a encontrar seu amigo Sileno e, como recompensa, pediu o dom de transformar em ouro tudo o que tocasse. No início, encantado com seu poder, Midas transformou objetos, flores e até o próprio palácio em ouro. Mas logo percebeu o castigo de seu desejo quando a comida e até sua filha se transformaram em metal. Desesperado, pediu perdão a Dionísio, que o orientou a se banhar no rio Páctolo, livrando-o do dom amaldiçoado. A história ensina sobre a avareza e o verdadeiro valor das coisas simples e humanas.",
             link: "https://brasilescola.uol.com.br/mitologia/o-toque-de-midas.htm",
             fonte: "Fonte: Brasil Escola"
         }
