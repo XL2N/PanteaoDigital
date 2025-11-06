@@ -37,7 +37,7 @@ img {
 
 main {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 0 auto;
     padding: 0 1rem;
 }
 
@@ -51,7 +51,7 @@ header {
     background-color: var(--roxo-principal);
     color: var(--branco);
     padding: 1.5rem 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0; /* removido para que hero full-bleed encoste no header */
     text-align: center;
     border-bottom: 5px solid var(--dourado);
 }
