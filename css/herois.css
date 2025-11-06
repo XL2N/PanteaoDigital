@@ -1,6 +1,7 @@
 /*--- SEÇÃO 1 --- */
 
 .hero {
+    margin-top: 2rem;
     position: relative; 
     text-align: center;
     color: var(--branco);

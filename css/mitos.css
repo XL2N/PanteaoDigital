@@ -1,6 +1,7 @@
 /* --- ESTILO DA PÁGINA DE MITOS --- */
 
 main > h2 {
+    margin-top: 2rem;
     text-align: center;
     font-size: 2.5rem;
     color: var(--roxo-principal);
