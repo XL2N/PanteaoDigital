@@ -47,26 +47,35 @@ section {
 
 /* --- HEADER E NAVEGAÇÃO --- */
 
-header {
+.header-wrapper {
     background-color: var(--roxo-principal);
-    color: var(--branco);
-    padding: 1.5rem 0;
-    margin-bottom: 0; /* removido para que hero full-bleed encoste no header */
-    text-align: center;
     border-bottom: 5px solid var(--dourado);
+    margin-bottom: 0;
+    width: 100%;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--branco);
+    padding: 1rem 2rem;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     color: var(--branco);
-    font-size: 4.5rem;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: left;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 2rem;
-    margin-top: 1rem;
+    margin: 0;
 }
 
 nav a {
@@ -89,7 +98,7 @@ nav a.active {
 /* --- RODAPÉ --- */
 
 footer {
-    background-color: var(--roxo-principal); /* (NOVO) */
+    background-color: var(--roxo-principal);
     color: var(--branco-marmore);
     text-align: center;
     padding: 2rem;
